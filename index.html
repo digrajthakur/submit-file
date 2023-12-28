@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <form
+            action="https://formspree.io/f/mbjnrnbn"
+            method="post"
+        >
+            <label for="title" >
+                <div class="category_title theTitle" >
+                    <p>Title</p>
+                </div>
+                <textarea id="title" name="title" placeholder="Enter your title" required></textarea>
+            </label>
+            <label for="subject">
+                <div class="category_title theSubject" >
+                    <p>Subject</p>
+                </div>
+                <textarea id="subject" name="subject" placeholder="Enter your subject" required></textarea>
+            </label>
+            <br>
+            <label for="articlePicture">
+                <div class="category_title thePicture">
+                    <p>Upload picture</p>
+                </div>
+                <input id="articlePicture" name="articlePicture" type="file" required>
+            </label>
+            <label for="articleVideo">
+                <div class="category_title theVideo" >
+                    <p>Upload video</p>
+                </div>
+                <input id="articleVideo" name="articleVideo" type="file" required>
+            </label>
+            <br>
+            <label for="category">
+                <div class="category_title theCategory">
+                    <p>Category</p>
+                </div>
+                <select id="category" name="category">
+                    <option value>Choose category</option>
+                    <option value="literature">Literature</option>
+                    <option value="poetry">Poetry</option>
+                    <option value="music">Music</option>
+                    <option value="cinema">Cinema</option>
+                    <option value="beauty">Beauty</option>
+                    
+                </select>
+            </label>
+            <p>must read</p>
+            <input
+                id="must"
+                name="must"
+                type="checkbox"
+                value="true"
+                required
+            >
+            <input
+                id="articleDate"
+                name="articleDate"
+                type="hidden"
+                required
+            >
+            <input
+                id="postArticle"
+                name="postArticle"
+                type="hidden"
+                value="create"
+                required
+            >
+            <button id="post_btn" name="post_btn" type="submit">Post article</button>
+        </form>
+    </body>
+</html>
